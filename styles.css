@@ -1,0 +1,313 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 18px;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-weight: 400;
+}
+.bg{
+    background: url("images/bg-header-desktop.png");
+    height: 300px;
+    width: 100%;
+}
+
+#logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+
+/* CONTAINERS */
+.container-1{
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.container-2{
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.container-3{
+    display: flex;
+    margin-bottom: 100px;
+}
+.container-4{
+    text-align: center;
+    margin-bottom: 100px;
+}
+.container-5{
+    text-align: center;
+}
+.container-6{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.container-7{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+
+.container-8{
+    text-align: center;
+}
+.col-left{
+    display: flex;
+}
+.col-right{
+    margin-left: 30px;
+}
+
+.col-6-img{
+    padding-left: 50px;
+}
+
+.container-1-h1{
+    margin-bottom: 20px;
+}
+.container-1-p{
+    margin-bottom: 30px;
+}
+.computer{
+    display: flex;
+}
+.device{
+   align-items: center;
+}
+.col-logo{
+    display: flex;
+}
+
+
+
+/* BUTTONS */
+.btn{
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+.btn-1{
+    text-decoration: none;
+    background-color: hsl(171, 66%, 44%);
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+    /* width: 200px; */
+    
+}
+
+.btn-2{
+    text-decoration: none;
+    background-color:  hsl(233, 100%, 69%);
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+    /* width: 200px; */
+    margin-left: 10px;
+}
+
+/* FOOTER */
+footer{
+    background-color: #eaebeb;
+    height: 150px;
+    width: 100%;
+    padding: 20px;
+}
+.footer-items{
+    display: flex;
+    justify-content: space-around;
+}
+.footer-logo{
+    display: flex;
+    height: 30px;
+    width: 40px;
+}
+#col-logo{
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    top: 30px;
+}
+
+.txt{
+    text-decoration: none;
+    color: hsl(210, 10%, 33%);
+}
+.txt:hover{
+    color: white;
+}
+
+li{
+    list-style: none;
+    margin-bottom: 20px;
+}
+.handles{
+    margin-left: 20px;
+}
+.handles:hover{
+    background-color: white;
+}
+/* END OF FOOTER */
+/* CSS FOR MOBILE PHONES */
+@media (max-width:767px) {
+    body{
+        font-size: 0.6rem;
+    }
+    .bg{
+        background: url("images/bg-header-mobile.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 40vh;
+        width: 100%;
+    }
+    .container-1{
+        text-align: center;
+    }
+    .btn{
+        flex-direction: column;
+        align-items: center;
+    }
+    .btn-2{
+       margin-top: 20px;
+       width: 200px;
+       margin-left: 0;
+    }
+    .btn-1{
+        width: 200px;
+    }
+    .container-3{
+        flex-direction: column;
+    }
+    .computer{
+        width: 100%;
+    }
+    .device{
+        width: 100%;
+    }
+    .col-right{
+        margin-top: 10px;
+        text-align: center;
+        margin-left: 0;
+    }
+    .container-6{
+        flex-direction: column;
+    }
+    .container-7{
+        flex-direction: column;
+        align-items: center;
+    }
+    .col-6-img{
+        padding-left: 0;
+    }
+    footer{
+        height: 50vh;
+    }
+    #col-logo{
+        justify-content: center;
+        top: 10px;
+
+    }
+    .footer-items{
+        flex-direction: column;
+        text-align: center; 
+        margin-top: 20px; 
+    }
+
+    @media (orientation: landscape){
+       .bg{
+        height: 70vh;
+       }
+       footer{
+        height: 80vh;
+      }
+       
+    }
+}
+
+@media (min-width:768px) and (max-width:1200px){
+    body{
+        font-size: 1em;
+    }
+    .bg{
+        background: url("images/bg-header-mobile.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 40vh;
+        width: 100%;
+    }
+    .container-1{
+        text-align: center;
+    }
+    .btn{
+        flex-direction: column;
+        align-items: center;
+    }
+    .btn-2{
+        margin-top: 20px;
+        width: 200px;
+        margin-left: 0;
+     }
+     .btn-1{
+         width: 200px;
+     }
+     .container-3{
+        flex-direction: column;
+    }
+    .computer{
+        width: 100%;
+    }
+    .device{
+        width: 100%;
+    }
+    .col-right{
+        margin-top: 10px;
+        text-align: center;
+        margin-left: 0;
+    }
+    .container-6{
+        flex-direction: column;
+    }
+    .container-7{
+        flex-direction: column;
+        align-items: center;
+    }
+    .col-6-img{
+        padding-left: 0;
+    }
+    footer{
+        height: 60vh;
+    }
+    #col-logo{
+        justify-content: center;
+        top: 10px;
+
+    }
+    .footer-items{
+        flex-direction: column;
+        text-align: center; 
+        margin-top: 20px; 
+    }
+
+    @media (orientation: landscape){
+        .bg{
+            height: 60vh;
+        }
+        footer{
+            height: 90vh;
+        }
+       
+    }
+
+}
